@@ -13,6 +13,7 @@ contract Test18 is Test {
         bytes memory initCode = abi.encodePacked(type(Destructor).creationCode);
         uint256 salt = 0xB0FFED;
         address addr;
+        uint start = gasleft();
         assembly {
             let codeSize := mload(initCode) // get size of initCode
             addr := create2(
@@ -22,6 +23,8 @@ contract Test18 is Test {
                 salt // salt from function arguments
             )
         }
+        uint gasused = start - gasleft() - 3;
+        require(gasused < 9000000000000000000, "Out of gas");
     }
 
     function test_singledestruct() external {
@@ -32,5 +35,4 @@ contract Test18 is Test {
         shortlived();
         shortlived();
     }
-
 }
