@@ -31,7 +31,7 @@ contract Test18 is Test {
         shortlived();
     }
 
-    function test_doubledestruct() external {
+    function testFail_doubledestruct() external {
         shortlived();
         shortlived();
     }

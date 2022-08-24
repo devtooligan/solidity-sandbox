@@ -10,7 +10,12 @@ out = 'out'
 src = 'src'
 verbosity = 3                 # The verbosity of tests
 
+ignored_error_codes = [
+    2018 # function state mutability can be restricted to view
+]
+
 fuzz_runs = 1000
+invariant_runs = 10000
 
 [profile.local]
 fuzz_runs = 1000

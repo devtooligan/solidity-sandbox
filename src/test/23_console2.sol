@@ -6,7 +6,7 @@ import "forge-std/console2.sol";
 
 contract Test23 is Test {
 
-    function test_console2() external view {
+    function testFail_console2() external view {
         console.log("this is console.log");
         console2.log("this is console2.log");
         revert();

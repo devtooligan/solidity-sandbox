@@ -10,7 +10,8 @@ interface Forky {
 
 contract Test26 is Test {
 
-    function test_forky() external {
+    function testFail_forky() external {
+        // supposed to be run on fork, change testFail to test
         address EDAI = 0xe025E3ca2bE02316033184551D4d3Aa22024D9DC;
         uint shares = 24616823692986978617466;
         console.log("eDai.convertBalanceToUnderlying(", "1e18", ")");
