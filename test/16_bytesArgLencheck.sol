@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity  0.8.0;
+pragma solidity ^0.8.15;
 
 import "forge-std/Test.sol";
 
-import {console} from "../../lib/forge-std/src/console.sol";
-import {console2} from "../../lib/forge-std/src/console2.sol";
+import {console} from "forge-std/console.sol";
+import {console2} from "forge-std/console2.sol";
 
 // incomplete experiment.
 // See the  IR, it does look like some validation is happening on the input.

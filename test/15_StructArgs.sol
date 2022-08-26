@@ -1,9 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity  0.8.0;
+pragma solidity ^0.8.15;
 
 import "forge-std/Test.sol";
-
-import {console} from "../../lib/forge-std/src/console.sol";
 
 contract Test15 is Test {
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity  0.8.0;
+pragma solidity ^0.8.15;
 import "forge-std/Test.sol";
 
 // if an owner calls a shady token then it can delegatecall a different ctrct owned by that Owner

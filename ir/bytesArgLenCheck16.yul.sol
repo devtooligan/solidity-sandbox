@@ -30,7 +30,7 @@ object "Target16_8670" {
         /// @src 10:2625:3017  "contract Target16 {..."
 
     }
-    /// @use-src 2:"lib/forge-std/src/console.sol", 10:"src/test/16_bytesArgLencheck.sol"
+    /// @use-src 2:"lib/forge-std/console.sol", 10:"src/test/16_bytesArgLencheck.sol"
     object "Target16_8670_deployed" {
         code {
             /// @src 10:2625:3017  "contract Target16 {..."
@@ -254,12 +254,12 @@ object "Target16_8670" {
                 var__8643 := zero_t_uint256_1
 
                 /// @src 10:2874:2881  "console"
-                let expr_8645_address := linkersymbol("lib/forge-std/src/console.sol:console")
+                let expr_8645_address := linkersymbol("lib/forge-std/console.sol:console")
                 /// @src 10:2874:2901  "console.log('foo: message')"
                 let _2_mpos := convert_t_stringliteral_2776e6021f04673b43240d2676f6b0f9356f9036f710253bda613535a501d3e1_to_t_string_memory_ptr()
                 fun_log_11770(_2_mpos)
                 /// @src 10:2911:2918  "console"
-                let expr_8651_address := linkersymbol("lib/forge-std/src/console.sol:console")
+                let expr_8651_address := linkersymbol("lib/forge-std/console.sol:console")
                 /// @src 10:2928:2936  "msg.data"
                 let expr_8655_offset := 0
                 let expr_8655_length := calldatasize()
@@ -267,7 +267,7 @@ object "Target16_8670" {
                 let _3_mpos := convert_array_t_bytes_calldata_ptr_to_t_bytes_memory_ptr(expr_8655_offset, expr_8655_length)
                 fun_logBytes_11294(_3_mpos)
                 /// @src 10:2947:2954  "console"
-                let expr_8658_address := linkersymbol("lib/forge-std/src/console.sol:console")
+                let expr_8658_address := linkersymbol("lib/forge-std/console.sol:console")
                 /// @src 10:2959:2967  "_message"
                 let _4_offset := var__message_8640_offset
                 let _4_length := var__message_8640_length
