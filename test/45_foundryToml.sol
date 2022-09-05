@@ -2,13 +2,9 @@
 pragma solidity ^0.8.15;
 import "forge-std/Test.sol";
 
-contract X {
+contract Test45 is Test {
 
-}
-
-contract TestX is Test {
-
-    function test_X() external {
-
+    function testFuzz11(uint x) external {
+        assert(x >= 0);
     }
 }

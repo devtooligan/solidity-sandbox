@@ -8,3 +8,6 @@ verbosity = 3                 # The verbosity of tests
 ignored_error_codes = [
     2018 # function state mutability can be restricted to view
 ]
+
+[profile.intense.fuzz]
+runs = 1000
