@@ -23,7 +23,7 @@ if [[ $1 ]] ; then
     newTest=$1
 else
     # get input for new test
-    echo "Enter name of new test: "
+    echo "Enter name of new test contract: "
     read newTest
 fi
 
@@ -32,6 +32,7 @@ newfile="test/${num}_${newTest}.sol"
 cat test/0_Template.t.sol \
   | sed "s/TestX/Test$num/g" \
   | sed "s/test_X/test_$newTest/g" \
+  | sed "s/X/$newTest/g" \
   > $newfile
 
 echo
