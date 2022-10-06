@@ -32,7 +32,6 @@ newfile="test/${num}_${newTest}.sol"
 cat test/0_Template.t.sol \
   | sed "s/TestX/Test$num/g" \
   | sed "s/test_X/test_$newTest/g" \
-  | sed "s/X/$newTest/g" \
   > $newfile
 
 echo
