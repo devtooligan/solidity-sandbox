@@ -1,7 +1,7 @@
 [profile.default]
-solc-version = "0.8.15"
+solc-version = "0.8.13"
 optimizer = false # faster compilation
-optimizer-runs = 10_000_000
+optimizer-runs = 1000000
 # via_ir = true
 verbosity = 3                 # The verbosity of tests
 
