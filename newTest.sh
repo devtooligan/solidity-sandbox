@@ -20,6 +20,10 @@ done
 num=$((num+1))
 
 if [[ $1 ]] ; then
+    echo $1
+    if [[ $2 ]] ; then
+        bash getSourceFiles.sh $2
+    fi
     newTest=$1
 else
     # get input for new test

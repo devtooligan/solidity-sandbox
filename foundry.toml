@@ -11,3 +11,6 @@ ignored_error_codes = [
 
 [profile.intense.fuzz]
 runs = 1000
+
+[fmt]
+line_length=128
