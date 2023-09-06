@@ -1,0 +1,66 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.19;
+import "forge-std/Test.sol";
+import "forge-std/console.sol";
+// contract DumbBank {
+//     mapping(address => uint256) public balances;
+
+//     function deposit() public payable {
+//         console.log("deposit");
+//         balances[msg.sender] += msg.value;
+//     }
+
+//     function withdraw(uint256 amount) public {
+//         console.log("withdraw");
+//         require(amount <= balances[msg.sender], "not enough funds");
+//         console.log(msg.sender);
+//         (bool ok, ) = msg.sender.call{value: amount}("");
+//         require(ok);
+//         unchecked {
+//             balances[msg.sender] -= amount;
+//         }
+//     }
+// }
+
+// interface IDumbBank {
+//     function deposit() external payable;
+
+//     function withdraw(uint256 amount) external;
+// }
+
+// // This attack fails. Make the attack succeed.
+// contract BankRobber {
+//     IDumbBank dumbBank;
+
+//     constructor(IDumbBank _dumbBank) payable {
+//         console.log("hi mom");
+//         console.log(address(this));
+//         dumbBank = _dumbBank;
+//         console.log(address(dumbBank)));
+//         _dumbBank.deposit{value: 1 ether}();
+//         _dumbBank.withdraw(1 ether);
+//     }
+
+//     fallback(bytes calldata) external payable returns (bytes memory){
+//         console.log("help");
+//         if (address(dumbBank).balance > 1 ether) {
+//             console.log("moar help");
+//             dumbBank.withdraw(1 ether);
+//             return abi.encode(true);
+//         }
+//     }
+// }
+contract Test42 is Test {
+
+    function test_moarhelp() external {
+        console.log("start");
+        // vm.deal(address(this), 100 ether);
+        // DumbBank dumbBank = new DumbBank();
+        // vm.deal(address(dumbBank), 10 ether);
+        // console.log("dumbBank balance", address(dumbBank).balance);
+        // console.log("hi moron");
+        // BankRobber bankRobber = new BankRobber{value: 1 ether}(IDumbBank(address(dumbBank)));
+        // console.log("bankRobber balance", address(bankRobber).balance);
+
+    }
+}
